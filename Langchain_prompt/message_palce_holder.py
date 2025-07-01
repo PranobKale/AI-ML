@@ -1,5 +1,8 @@
 from langchain_core.prompts import MessagesPlaceholder,ChatPromptTemplate
 
+# Note:-
+# 'MessagesPlaceholder' used to provide the chat history to the chatbot to understand the previous conversations.
+
 # chat template
 chat_tempalate = ChatPromptTemplate([
     ('system','you are helpfull AI agnet'),
