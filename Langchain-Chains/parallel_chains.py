@@ -26,6 +26,7 @@ prompt3 = PromptTemplate(
 
 parser = StrOutputParser()
 
+
 parallel_chain = RunnableParallel({
     'notes' : prompt1 | model1 | parser,
     'quiz' : prompt2 | model2 | parser
